@@ -1,0 +1,65 @@
+roaming-usage:
+    notDuration:
+        value: 
+            content:
+                ROAM_FREE_LIST:
+                  - PROD_ID: "NA00007748"
+                    PROD_NM: "baro 클럽 3GB 충전"
+                    BEGIN_DT: null
+                    PROD_DURATION: null
+                    DURATION_UNIT: null
+                    SKIP_NM: ""
+                    SKIP_ID: ""
+                    TOTAL: "3072.00"
+                    USE: "0.00"
+                    REAMIN: "3072.00"
+                    UNIT: "MB"
+                    UNLIMIT: "값 확인필요"
+    durationDay:
+        value: 
+            content:
+                ROAM_FREE_LIST:
+                  - PROD_ID: "NA00007748"
+                    PROD_NM: "baro 클럽 3GB 충전"
+                    BEGIN_DT: "2023062619"
+                    PROD_DURATION: "10"
+                    DURATION_UNIT: "값 확인필요"
+                    SKIP_NM: ""
+                    SKIP_ID: ""
+                    TOTAL: "3072.00"
+                    USE: "0.00"
+                    REAMIN: "3072.00"
+                    UNIT: "MB"
+                    UNLIMIT: "값 확인필요"
+    durationHour:
+        value: 
+            content:
+                ROAM_FREE_LIST:
+                  - PROD_ID: "NA00007748"
+                    PROD_NM: "baro 클럽 3GB 충전"
+                    BEGIN_DT: "2023062619"
+                    PROD_DURATION: "10"
+                    DURATION_UNIT: "H"
+                    SKIP_NM: ""
+                    SKIP_ID: ""
+                    TOTAL: "3072.00"
+                    USE: "0.00"
+                    REAMIN: "3072.00"
+                    UNIT: "MB"
+                    UNLIMIT: "값 확인필요"
+    unlimit:
+        value: 
+            content:
+                ROAM_FREE_LIST:
+                  - PROD_ID: "NA00007748"
+                    PROD_NM: "baro 클럽 3GB 충전"
+                    BEGIN_DT: "2023062619"
+                    PROD_DURATION: ""
+                    DURATION_UNIT: ""
+                    SKIP_NM: ""
+                    SKIP_ID: ""
+                    TOTAL: "무제한"
+                    USE: "0.00"
+                    REAMIN: "3072.00"
+                    UNIT: "MB"
+                    UNLIMIT: "값 확인필요"                                                            

@@ -1,0 +1,10 @@
+svc-usage:
+    getSuccess:
+        description: 성공
+        content:
+            application/json:
+                schema:
+                    $ref: "../schemas/SvcUsage.yaml#/svc-usage"
+                examples:
+                    5GX프라임:
+                        $ref: "../examples/SvcUsageExample.yaml#/svc-usage/5GX프라임"

@@ -1,0 +1,43 @@
+in-use:
+    title: Response
+    type: object
+    properties: 
+        content:
+            type: object
+            properties:
+                SVC_MGMT_NUM:
+                    type: string
+                    description: 서비스 관리번호
+                PROD_VALUE:
+                    type: array
+                    description: 부가서비스
+                    items:
+                        type: object
+                        properties:
+                            FEE_PROD_ID:
+                                type: string
+                                description: 상품 ID
+                            FEE_PROD_CHG_DT:
+                                type: string
+                                description: 상품 가입일자
+                            PROD_NM:
+                                type: string
+                                description: 상품명
+                            BAS_FEE_AMT:
+                                type: string
+                                description: 기본료
+                            FIX_AMT_AMT:
+                                type: string
+                                description: 정액료
+                            METER_FEE_AMT:
+                                type: string
+                                description: 종량료
+                            INFO_USE_AMT:
+                                type: string
+                                description: 정보이용료
+                            SVC_PROD_CD:
+                                type: string
+                                description: 상품구분코드
+                            EXPS_OBJ_PROD_YN:
+                                type: string
+                                description: 노출상품대상요브

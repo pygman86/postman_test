@@ -1,0 +1,100 @@
+errors:
+    error_500:
+        type: object
+        title: response
+        description: Internal server error 
+        properties: 
+            errors:
+                type: object
+                properties:
+                    errorCode:
+                        type: string
+                        description: 인터페이스 에러코드
+                        enum: [INT0001]
+                    errorDescription:
+                        type: string
+                        description: 인터페이스 정의 에러메시지
+    error_400:
+        type: object
+        title: response
+        description: Bad request
+        properties: 
+            errors:
+                type: object
+                properties:
+                    errorCode:
+                        type: string
+                        description: 인터페이스 에러코드
+                        enum: [INT0002, INT0007, INT0008]
+                    errorDescription:
+                        type: string
+                        description: 인터페이스 정의 에러메시지                        
+    error_412:
+        type: object
+        title: response
+        description: Unprocessable_entity - 잘못된 파라미터 요청(`type mismatch`)
+        properties:
+            errors:
+                type: object
+                properties:
+                    errorCode:
+                        type: string
+                        description: 인터페이스 에러코드
+                        enum: [INT0009]
+                    errorDescription:
+                        type: string
+                        description: 인터페이스 정의 에러메시지
+    error_502_apihub:
+        type: object
+        title: response
+        description: Apihub 에러
+        properties:
+            errors:
+                type: object
+                properties:
+                    errorCode:
+                        type: string
+                        description: 인터페이스 에러코드
+                        enum: [INT1000]
+                    errorDescription:
+                        type: string
+                        description: Apihub 에러메시지
+                    detailErrorCode:
+                        type: string
+                        description: Apihub 에러코드 표시      
+    error_502_icas:
+        type: object
+        title: response
+        description: ICAS 에러
+        properties:
+            errors:
+                type: object
+                properties:
+                    errorCode:
+                        type: string
+                        description: 인터페이스 에러코드
+                        enum: [INT2000]
+                    errorDescription:
+                        type: string
+                        description: ICAS 에러메시지
+                    detailErrorCode:
+                        type: string
+                        description: ICAS 에러코드 표시                        
+    error_502_mcg:
+        type: object
+        title: response
+        description: MCG 에러
+        properties:
+            errors:
+                type: object
+                properties:
+                    errorCode:
+                        type: string
+                        description: 인터페이스 에러코드
+                        enum: [INT3000]
+                    errorDescription:
+                        type: string
+                        description: MCG 에러메시지
+                    detailErrorCode:
+                        type: string
+                        description: MCG 에러코드 표시

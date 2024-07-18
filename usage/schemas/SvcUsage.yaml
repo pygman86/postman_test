@@ -1,0 +1,67 @@
+svc-usage:
+    title: Response
+    type: object
+    properties: 
+        content:
+            type: object
+            properties:
+                REMAIN_BASIC_CALL_INQ_LIST:
+                    type: array
+                    items:
+                        type: object
+                        properties:
+                            PLAN_ID:
+                                type: string
+                                description: |
+                                    상품코드
+                                    > 정지 이력이 있는 경우 PROD_ID값이 `LAST_MONTH`-전월 or `CURRENT_MONTH`-당월로 리턴 
+                            PLAN_NAME:
+                                type: string
+                                description: 상품명
+                            SKIP_CODE:
+                                type: string
+                                description: |
+                                    공제코드
+                                    > 요금제 변경 이력이 있는 경우 SKIP_ID값이 `RRRRRR`이월 or `XXXXXX`당월로 리턴
+                                    > 데이터한도(충전)요금제의 경우 `DP`로 리턴
+                                    > 팅요금제의 경우 `HA` or `CH` or `PR`로 리턴
+                                    > 24시간 데이터 할인의 경우 `JD001`로 리턴
+                                    >   > 추가적인 상태의 확인을 위해서는 어떤 코드로 상태를 판단해야 하는지 CDRS담당자에게 문의 필요함.
+                                    >   > N서비스에서 노출하고자 하는 공제항목(SKIP ID)과 상품ID를 정의하고, 일치하는 경우 리턴값에 SET한다.
+                            FREE_PLAN_NAME:
+                                type: string
+                                description: 무료혜택명
+                            TOTAL_QTY:
+                                type: number
+                                description: 기본제공량
+                            USE_QTY:
+                                type: number
+                                description: 사용량
+                            REMAIN_QTY:
+                                type: number
+                                description: 잔여량
+                            UNIT_CDOE: 
+                                type: string
+                                description: 단위
+                            COUPON_REGI_DATE:
+                                 type: string
+                                 description: 쿠폰 등록일
+                            UNLIMIT_TYPE:
+                                type: string
+                                description: |
+                                    무료제공여부
+                                    >  무제한 판단 조건 - UNLIMIT_TYPE: `1`, `B`, `M`
+                            OPMD_JOIN_IND:
+                                type: string
+                                description: OPMD 가입가능상품여부
+                            CODE_TYP:
+                                type: string
+                                description: | 
+                                    서비스 구분 
+                                    > 범용데이터, 특수데이터, 음성, SMS, 기타, 초과 데이터 사용
+                                    > `1`:영상, `2`:문자, `4`:음성, `5`:음성|영상, 
+                                    > `7`:VSP, `14`:VSD, `P`:범용데이터, `S`:특수데이터
+                            DC_DEDT_PRTY:
+                                type: number
+                                description: 우선순위
+                            

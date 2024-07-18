@@ -1,0 +1,96 @@
+svc-usage:
+    5GX프라임:
+        value:
+            content:
+                REMAIN_BASIC_CALL_INQ_LIST:
+                  - PLAN_ID: NA00006404
+                    PLAN_NAME: 5GX프라임
+                    SKIP_CODE: DD3GN
+                    FREE_PLAN_NAME: SMS/MMS 기본제공
+                    TOTAL_QTY: 0
+                    USE_QTY: 0
+                    REMAIN_QTY: 0
+                    UNIT_CODE: "310"
+                    COUPON_REGI_DATE: ""
+                    UNLIMIT_TYPE: B
+                    OPMD_JOIN_IND: ""
+                    CODE_TYP: "2"
+                    DC_DEDT_PRTY: 11000
+                  - PLAN_ID: NA00006404
+                    PLAN_NAME: 5GX프라임
+                    SKIP_CODE: DD3GS
+                    FREE_PLAN_NAME: SKT 고객간 음성 무제한
+                    TOTAL_QTY: 9999999
+                    USE_QTY: 0
+                    REMAIN_QTY: 9999999
+                    UNIT_CODE: "240"
+                    COUPON_REGI_DATE: ""
+                    UNLIMIT_TYPE: "M"
+                    OPMD_JOIN_IND: ""
+                    CODE_TYP: "4"
+                    DC_DEDT_PRTY: 19500
+                  - PLAN_ID: NA00006404
+                    PLAN_NAME: 5GX프라임
+                    SKIP_CODE: DD3GT
+                    FREE_PLAN_NAME: 집전화·이동전화 음성 무제한
+                    TOTAL_QTY: 9999999
+                    USE_QTY: 0
+                    REMAIN_QTY: 9999999
+                    UNIT_CODE: "240"
+                    COUPON_REGI_DATE: ""
+                    UNLIMIT_TYPE: "M"
+                    OPMD_JOIN_IND: ""
+                    CODE_TYP: "4"
+                    DC_DEDT_PRTY: 19500  
+                  - PLAN_ID: NA00006404
+                    PLAN_NAME: 5GX프라임
+                    SKIP_CODE: DD3GU
+                    FREE_PLAN_NAME: 데이터통화 무제한
+                    TOTAL_QTY: 0
+                    USE_QTY: 0
+                    REMAIN_QTY: 0
+                    UNIT_CODE: 140
+                    COUPON_REGI_DATE: 
+                    UNLIMIT_TYPE: M
+                    OPMD_JOIN_IND: 
+                    CODE_TYP: 8
+                    DC_DEDT_PRTY: 30993     
+                  - PLAN_ID: NA00006404
+                    PLAN_NAME: 5GX프라임
+                    SKIP_CODE: DD3GV
+                    FREE_PLAN_NAME: 통합공유 데이터 60GB
+                    TOTAL_QTY: 62914560
+                    USE_QTY: 291391
+                    REMAIN_QTY: 62623169
+                    UNIT_CODE: 140
+                    COUPON_REGI_DATE: 
+                    UNLIMIT_TYPE: 0
+                    OPMD_JOIN_IND: 
+                    CODE_TYP: 8
+                    DC_DEDT_PRTY: 30995
+                  - PLAN_ID: NA00006404
+                    PLAN_NAME: 5GX프라임
+                    SKIP_CODE: DD3GW
+                    FREE_PLAN_NAME: 영상 부가전화 300분
+                    TOTAL_QTY: 18000
+                    USE_QTY: 0
+                    REMAIN_QTY: 18000
+                    UNIT_CODE: 240
+                    COUPON_REGI_DATE: 
+                    UNLIMIT_TYPE: 0
+                    OPMD_JOIN_IND: 
+                    CODE_TYP: 5
+                    DC_DEDT_PRTY: 31000                
+                  - PLAN_ID: NA00006404
+                    PLAN_NAME: 5GX프라임
+                    SKIP_CODE: DD3GX
+                    FREE_PLAN_NAME: 한도초과후 데이터 무료
+                    TOTAL_QTY: 499999999
+                    USE_QTY: 0
+                    REMAIN_QTY: 499999999
+                    UNIT_CODE: 140
+                    COUPON_REGI_DATE: 
+                    UNLIMIT_TYPE: 1
+                    OPMD_JOIN_IND: 
+                    CODE_TYP: 8
+                    DC_DEDT_PRTY: 41001

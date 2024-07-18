@@ -1,0 +1,25 @@
+roaming-usage:
+    get:
+        summary: 로밍 사용량 조회
+        operationId: ROAMING-USAGE
+        description: |
+            T로밍 요금제만 조회 가능
+            > Interface: APIHUB - `ISCDR00007`
+        tags: [APIHUB, USAGE]
+        parameters:
+          - in: path
+            name: svcManagementNumber
+            schema:
+                type: string
+            required: true
+            description: 서비스 관리번호 (10자리)
+            example: 1234567890
+        responses:
+            '200':
+                $ref: "../responses/RoamingResponse.yaml#/roaming-usage/getSuccess"
+            '400':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_400"
+            '500':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_500"
+            '502':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_502_apihub"

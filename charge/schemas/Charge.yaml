@@ -1,0 +1,186 @@
+monthly:
+    title: Response
+    type: object
+    properties: 
+        content:
+            type: object
+            properties:
+                MONTHLY_CHARGE_INQ_LIST:
+                    type: array
+                    items: 
+                        type: object
+                        properties:
+                            REC_CNT1:
+                                type: string
+                                description: |
+                                    조회 데이터 건수 
+                                    > 데이터가 없을 경우: REC_CNT1 값이 0
+                            PAY_MTHD_CD:
+                                type: string
+                                description: 납부방법 코드
+                            BILL_ISUE_TYP_CD:
+                                type: string
+                                description: 청구서 발행 유형코드
+                            MAX_INV_DT:
+                                type: string
+                                description: 최종 청구일
+                            ACNT_NUM:
+                                type: string
+                                description: |
+                                    청구번호
+                                    > `청구요금상세조회` 시 parameter로 사용
+                            CUST_NUM:
+                                type: string
+                                description: 고객번호
+                            MONTHLY_CHARGE_INQ:
+                                type: array
+                                description: 월별 청구 요금
+                                items:
+                                    type: object
+                                    properties:
+                                        INV_DT:
+                                            type: string
+                                            description: |
+                                                청구일
+                                                > `청구요금상세조회` 시 parameter로 사용
+                                        INV_SVC_CNT:
+                                            type: string
+                                            description: 청구시 서비스 수
+                                        PAY_MTHD_CD1:
+                                            type: string
+                                            description: 납부방법 코드
+                                        INV_AMT:
+                                            type: string
+                                            description: 청구금액
+                                        COL_BAMT:
+                                            type: string
+                                            description: 미납잔액
+                                        DC_FEE:
+                                            type: string
+                                            description: 할인요금
+
+detail:
+    title: Response
+    type: object
+    properties: 
+        content:
+            type: object
+            properties:
+                OUT1:
+                    type: array
+                    description: 월별청구 상세정보
+                    items:
+                        type: object
+                        properties: 
+                            INV_DT:
+                                type: string
+                                description: 청구일자
+                            SVC_MGMT_NUM:
+                                type: string
+                                description: 서비스 관리번호
+                            SVC_NM:
+                                type: string
+                                description: 서비스명
+                            SVC_NUM:
+                                type: string
+                                description: 서비스 번호
+                            ORG_SVC_CD:
+                                type: string
+                                description: 서비스 코드
+                            BAS_ADDR:
+                                type: string
+                                description: 기본 주소
+                            DTL_ADDR:
+                                type: string
+                                description: 상세 주소
+                OUT2:
+                    type: array
+                    description: |
+                        청구요금서 정보
+                        > invoiceDate 미 입력 시 가장 최근 월 조회
+                        > invoiceDate 입력 시 해당 월 조회
+                        > invoiceDate 값 이 유효하지 않으면 조회되는 값 없음
+                    items:
+                        type: object
+                        properties: 
+                            OUT2_INV_DT:
+                                type: string
+                                description: 청구일자
+                            TOT_INV_AMT:
+                                type: string
+                                description: 총 청구금액
+                            DC_AMT:
+                                type: string
+                                description: 할인 금액
+                OUT3:
+                    type: array
+                    description: |
+                        서비스별 청구 정보
+                        > invoiceDate 미 입력 시 가장 최근 월 조회
+                        > invoiceDate 입력 시 해당 월 조회             
+                        > invoiceDate 값 이 유효하지 않으면 조회되는 값 없음
+                    items:
+                        type: object
+                        properties: 
+                            OUT3_SVC_NM:
+                                type: string
+                                description: 서비스 명
+                            BILL_INV_AMT:
+                                type: string
+                                description: 청구 금액
+                OUT4:
+                    type: array
+                    description: | 
+                        상품별 청구 정보
+                        > invoiceDate 미 입력 시 가장 최근 월 조회
+                        > invoiceDate 입력 시 해당 월 조회
+                        > invoiceDate 값 이 유효하지 않으면 조회되는 값 없음
+                    items:
+                        type: object
+                        properties:
+                            OUT4_SVC_MGMT_NUM:
+                                type: string
+                                description: 서비스 관리번호
+                            OUT4_SVC_NM:
+                                type: string
+                                description: 서비스 명
+                            OUT4_SVC_NUM:
+                                type: string
+                                description: 서비스 번호
+                            OUT4_ORG_SVC_CD:
+                                type: string
+                                description: 서비스 코드
+                            ORG_SVC_NM:
+                                type: string
+                                description: 서비스 코드명
+                            OUT4_BAS_ADDR:
+                                type: string
+                                description: 기본 주소
+                            OUT4_DTL_ADDR:
+                                type: string
+                                description: 상세 주소
+                            SVC_DTL_CL_NM:
+                                type: string
+                                description: 서비스 상세명
+                            SVC_TECH_MTHD_NM:
+                                type: string
+                                description: 서비스 기술 방식명
+                            BILL_ITM_NM:
+                                type: string
+                                description: 청구 항목명
+                            OUT4_BILL_INV_AMT:
+                                type: string
+                                description: 청구 금액                                
+                            BILL_ITM_MCL_AMT:
+                                type: string 
+                                description: 중분류 금액
+                            BILL_ITM_LCL_NM:
+                                type: string
+                                description: 대분류명
+                            BILL_ITM_MCL_NM:
+                                type: string
+                                description: 중분류명
+                            BILL_ITM_SCL_NM:
+                                type: string
+                                description: 소분류명
+                                

@@ -1,0 +1,35 @@
+bad_request:
+    value:
+        errros:
+            errorCode: INT0002
+            errorDescription: 서버 에러메시지
+
+invalid_parameter:
+    value: 
+        errros:
+            errorCode: INT0007
+            errorDescription: "`{}` parameter is invalid." 
+
+required_parameter:
+    value:
+        errros:
+            errorCode: INT0008
+            errorDescription: "`{}` parameter is required."
+
+unprocessable_entity:
+    errors:
+        errorCode: INT0009
+        errorDescription: "`{}` parameter types don't match."
+
+internal_server:
+    errros:
+        errorCode: INT0001
+        errorDescription: 서버 에러메시지
+
+apihub:
+    noData:
+        value:
+            errros:
+                errorCode: INT1000
+                detailErrorCode: PCR_DTS_E0005
+                errorDescription: 조회된 데이터가 없습니다.

@@ -1,0 +1,13 @@
+in-use:
+    getSuccess:
+        description: 성공
+        content:
+            application/json:
+                schema:
+                    $ref: '../schemas/AdditionalService.yaml#/in-use'
+                examples:
+                    부가서비스-일반: 
+                        $ref: '../examples/AdditionalServiceExample.yaml#/in-use/_부가서비스-일반'
+                    부가서비스-로밍(실데이터 확인필요):
+                        $ref: '../examples/AdditionalServiceExample.yaml#/in-use/_부가서비스-로밍'
+                    

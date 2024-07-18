@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "a55faffb-814e-4711-8c3c-0b06db2953de",
+		"name": "인터페이스 호출 예제",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "33420571-a55faffb-814e-4711-8c3c-0b06db2953de"
+	},
+	"item": [
+		{
+			"name": "서비스 관리번호 조회",
+			"item": [
+				{
+					"name": "서비스 관리번호 조회",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0b6c62af-efed-49b9-8f10-acd286d64566",
+								"exec": [
+									"var jsonData;",
+									"",
+									"jsonData = pm.response.json(); ",
+									"",
+									"var svcManagementNumber = pm.response.json().content;",
+									"",
+									"pm.environment.set(\"svcManagementNumber\", svcManagementNumber);",
+									"",
+									"console.log(\"svcManagementNumber 조회 완료\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"packages": {},
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "66ddcb8b-f7c4-4fd6-a783-3735fb227360",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/svc/svc-management-number?svcNumber={{svcNumber}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"svc",
+								"svc-management-number"
+							],
+							"query": [
+								{
+									"key": "svcNumber",
+									"value": "{{svcNumber}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "ba34337c-57a4-4822-9789-cc4dfe6b7eea"
+		}
+	]
+}

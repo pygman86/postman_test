@@ -1,0 +1,386 @@
+monthly:
+    _월별청구요금:
+        value:
+            content:
+                MONTHLY_CHARGE_INQ_LIST:
+                  - REC_CNT1: 6
+                    PAY_MTHD_CD: 02
+                    BILL_ISUE_TYP_CD: H
+                    MAX_INV_DT: 20230930
+                    ACNT_NUM: 6444317743
+                    CUST_NUM: 8652218575
+                    MONTHLY_CHARGE_INQ:
+                      - INV_DT: 20230930
+                        INV_SVC_CNT: 000000000000001
+                        PAY_MTHD_CD1: 02
+                        INV_AMT: 1,520
+                        COL_BAMT: 1,520
+                        DC_FEE: -26,281
+                      - INV_DT: 20230831
+                        INV_SVC_CNT: 000000000000001
+                        PAY_MTHD_CD1: 02
+                        INV_AMT: 22,000
+                        COL_BAMT: 0
+                        DC_FEE: -26,275
+                      - INV_DT: 20230731
+                        INV_SVC_CNT: 000000000000001
+                        PAY_MTHD_CD1: 02
+                        INV_AMT: 4,520
+                        COL_BAMT: 0
+                        DC_FEE: -26,281
+                      - INV_DT: 20230630
+                        INV_SVC_CNT: 000000000000001
+                        PAY_MTHD_CD1: 02
+                        INV_AMT: 0
+                        COL_BAMT: 0
+                        DC_FEE: -26,275
+                      - INV_DT: 20230531
+                        INV_SVC_CNT: 000000000000001
+                        PAY_MTHD_CD1: 02
+                        INV_AMT: 0
+                        COL_BAMT: 0
+                        DC_FEE: -26,275
+                      - INV_DT: 20230430
+                        INV_SVC_CNT: 000000000000001
+                        PAY_MTHD_CD1: 02
+                        INV_AMT: 0
+                        COL_BAMT: 0
+                        DC_FEE: -26,275
+
+detail:
+    _청구상세:
+        value:
+             content:
+                OUT1:
+                  - INV_DT: 20240531
+                    SVC_MGMT_NUM: 7310536938
+                    SVC_NM: 이동전화
+                    SVC_NUM: 01071540822
+                    ORG_SVC_CD: C
+                    BAS_ADDR: ""
+                    DTL_ADDR: ""
+                  - INV_DT: 20240430
+                    SVC_MGMT_NUM: 7310536938
+                    SVC_NM: 이동전화
+                    SVC_NUM: 01071540822
+                    ORG_SVC_CD: C
+                    BAS_ADDR: ""
+                    DTL_ADDR: ""
+                  - INV_DT: 20240331
+                    SVC_MGMT_NUM: 7310536938
+                    SVC_NM: 이동전화
+                    SVC_NUM: 01071540822
+                    ORG_SVC_CD: C
+                    BAS_ADDR: ""
+                    DTL_ADDR: ""
+                OUT2:
+                  - OUT2_INV_DT: 20240531
+                    TOT_INV_AMT: 19,700
+                    DC_AMT: -26,275
+                OUT3:
+                  - OUT3_SVC_NM: 이동전화
+                    BILL_INV_AMT: 19,700
+                OUT4:
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 80909
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 월정액(휴대폰)
+                    BILL_ITM_MCL_AMT: 80909
+                    BILL_ITM_LCL_NM: 통신서비스요금
+                    BILL_ITM_MCL_NM: 월정액
+                    BILL_ITM_SCL_NM: 월정액          
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: -22275
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 선택약정할인
+                    BILL_ITM_MCL_AMT: -26275
+                    BILL_ITM_LCL_NM: 통신서비스요금
+                    BILL_ITM_MCL_NM: 통신요금할인
+                    BILL_ITM_SCL_NM: 통신요금할인
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: -3000
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 온가족프리_이동전화 할인
+                    BILL_ITM_MCL_AMT: -26275
+                    BILL_ITM_LCL_NM: 통신서비스요금
+                    BILL_ITM_MCL_NM: 통신요금할인
+                    BILL_ITM_SCL_NM: 통신요금할인         
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: -1000
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: TB끼리 TV플러스할인
+                    BILL_ITM_MCL_AMT: -26275
+                    BILL_ITM_LCL_NM: 통신서비스요금
+                    BILL_ITM_MCL_NM: 통신요금할인
+                    BILL_ITM_SCL_NM: 통신요금할인
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: -7828
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: wavve+_할인
+                    BILL_ITM_MCL_AMT: 8145
+                    BILL_ITM_LCL_NM: 부가서비스요금
+                    BILL_ITM_MCL_NM: 부가서비스이용료
+                    BILL_ITM_SCL_NM: 부가서비스이용료        
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: -5028
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: FLO_할인
+                    BILL_ITM_MCL_AMT: 8145
+                    BILL_ITM_LCL_NM: 부가서비스요금
+                    BILL_ITM_MCL_NM: 부가서비스이용료
+                    BILL_ITM_SCL_NM: 부가서비스이용료
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 2637
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 스마트콜Pick
+                    BILL_ITM_MCL_AMT: 8145
+                    BILL_ITM_LCL_NM: 부가서비스요금
+                    BILL_ITM_MCL_NM: 부가서비스이용료
+                    BILL_ITM_SCL_NM: 부가서비스이용료
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 7182
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: FLO 앤 데이터
+                    BILL_ITM_MCL_AMT: 8145
+                    BILL_ITM_LCL_NM: 부가서비스요금
+                    BILL_ITM_MCL_NM: 부가서비스이용료
+                    BILL_ITM_SCL_NM: 부가서비스이용료               
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 11182
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: wavve앤데이터 플러스
+                    BILL_ITM_MCL_AMT: 8145
+                    BILL_ITM_LCL_NM: 부가서비스요금
+                    BILL_ITM_MCL_NM: 부가서비스이용료
+                    BILL_ITM_SCL_NM: 부가서비스이용료
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 51500
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 구글플레이콘텐츠*
+                    BILL_ITM_MCL_AMT: 73500
+                    BILL_ITM_LCL_NM: 결제대행요금
+                    BILL_ITM_MCL_NM: 콘텐츠이용료
+                    BILL_ITM_SCL_NM: 콘텐츠이용료
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 22000
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: Netflix 멤버십*
+                    BILL_ITM_MCL_AMT: 73500
+                    BILL_ITM_LCL_NM: 결제대행요금
+                    BILL_ITM_MCL_NM: 콘텐츠이용료
+                    BILL_ITM_SCL_NM: 콘텐츠이용료
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 21700
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 휴대폰결제_NHN KCP*
+                    BILL_ITM_MCL_AMT: 19700
+                    BILL_ITM_LCL_NM: 결제대행요금
+                    BILL_ITM_MCL_NM: 휴대폰결제
+                    BILL_ITM_SCL_NM: 휴대폰결제       
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: -2000
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 휴대폰결제_이벤트*
+                    BILL_ITM_MCL_AMT: 19700
+                    BILL_ITM_LCL_NM: 결제대행요금
+                    BILL_ITM_MCL_NM: 휴대폰결제
+                    BILL_ITM_SCL_NM: 휴대폰결제       
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 84070
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 기기분할상환금*
+                    BILL_ITM_MCL_AMT: 89600
+                    BILL_ITM_LCL_NM: 기기구입비
+                    BILL_ITM_MCL_NM: 기기분할상환금
+                    BILL_ITM_SCL_NM: 기기분할상환금
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 5530
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 기기분할상환금수수료*
+                    BILL_ITM_MCL_AMT: 89600
+                    BILL_ITM_LCL_NM: 기기구입비
+                    BILL_ITM_MCL_NM: 기기분할상환금
+                    BILL_ITM_SCL_NM: 기기분할상환금
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: -234385
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 분리지원금액
+                    BILL_ITM_MCL_AMT: -234385
+                    BILL_ITM_LCL_NM: 기타요금
+                    BILL_ITM_MCL_NM: 분리지원금액
+                    BILL_ITM_SCL_NM: 분리지원금액  
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: 10191
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 부가세총액*
+                    BILL_ITM_MCL_AMT: 8506
+                    BILL_ITM_LCL_NM: 기타요금
+                    BILL_ITM_MCL_NM: 부가가치세(세금)
+                    BILL_ITM_SCL_NM: 부가가치세(세금)
+                  - OUT4_SVC_MGMT_NUM: 7310536938
+                    OUT4_SVC_NM: 이동전화
+                    OUT4_SVC_NUM: 01071540822
+                    OUT4_ORG_SVC_CD: C
+                    ORG_SVC_NM: 이동전화
+                    OUT4_BAS_ADDR: ""
+                    OUT4_DTL_ADDR: ""
+                    OUT4_BILL_INV_AMT: -1685
+                    SVC_DTL_CL_NM: ""
+                    SVC_TECH_MTHD_NM: ""
+                    BILL_ITM_NM: 할인부가세*
+                    BILL_ITM_MCL_AMT: 8506
+                    BILL_ITM_LCL_NM: 기타요금
+                    BILL_ITM_MCL_NM: 부가가치세(세금)
+                    BILL_ITM_SCL_NM: 부가가치세(세금)
+    _청구일자오류:
+        value:
+             content:
+                OUT1:
+                  - INV_DT: 20240531
+                    SVC_MGMT_NUM: 7310536938
+                    SVC_NM: 이동전화
+                    SVC_NUM: 01071540822
+                    ORG_SVC_CD: C
+                    BAS_ADDR: ""
+                    DTL_ADDR: ""
+                  - INV_DT: 20240430
+                    SVC_MGMT_NUM: 7310536938
+                    SVC_NM: 이동전화
+                    SVC_NUM: 01071540822
+                    ORG_SVC_CD: C
+                    BAS_ADDR: ""
+                    DTL_ADDR: ""
+                  - INV_DT: 20240331
+                    SVC_MGMT_NUM: 7310536938
+                    SVC_NM: 이동전화
+                    SVC_NUM: 01071540822
+                    ORG_SVC_CD: C
+                    BAS_ADDR: ""
+                    DTL_ADDR: ""
+                OUT2:
+                  - OUT2_INV_DT: ""
+                    TOT_INV_AMT: ""
+                    DC_AMT: ""
+                OUT3:
+                  - 
+                OUT4:
+                  -

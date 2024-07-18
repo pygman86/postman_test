@@ -1,0 +1,30 @@
+in-use:
+    _부가서비스-일반:
+      value:
+        content:
+            SVC_MGMT_NUM: 1234567890
+            PROD_VALUE:
+              - FEE_PROD_ID: NA00000262
+                FEE_PROD_CHG_DT: 20111007
+                PROD_NM: 소리샘
+                BAS_FEE_AMT: 0
+                FIX_AMT_AMT: 0
+                METER_FEE_AMT: 0
+                INFO_USE_AMT: 0
+                SVC_PROD_CD: 0
+                EXPS_OBJ_PROD_YN: Y
+              - FEE_PROD_ID: NA00000304
+                FEE_PROD_CHG_DT: 20111007
+                PROD_NM: 발신번호표시
+                BAS_FEE_AMT: 0
+                FIX_AMT_AMT: 0
+                METER_FEE_AMT: 0
+                INFO_USE_AMT: 0
+                SVC_PROD_CD: 0
+                EXPS_OBJ_PROD_YN: Y 
+    _부가서비스-로밍:
+        value:
+            content:
+                SVC_MGMT_NUM: 1234567890
+
+    

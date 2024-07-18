@@ -1,0 +1,46 @@
+roaming-usage:
+    title: Response
+    type: object
+    properties: 
+        content:
+            type: object
+            properties:
+                ROAM_FREE_LIST:
+                    type: array
+                    description: 로밍 데이터
+                    items:
+                        type: object
+                        properties:
+                            PROD_ID:
+                                type: string
+                                description: 요금제코드
+                            PROD_NM:
+                                type: string
+                                description: 요금제명
+                            BEGIN_DT:
+                                type: string
+                                description: 요금제 시작일, 값이 있으면 `기간형` 상품
+                            PROD_DURATION:
+                                type: string
+                                description: 요금제 기간, 시작일 기준으로 Add하여 `종료일` 계산
+                            DURATION_UNIT:
+                                type: string
+                                description: 요금제 기간단위, `H`(시간), `그 외`(일 단위)
+                            SKIP_NM: 
+                                type: string
+                                description: 공제코드
+                            TOTAL:
+                                type: string
+                                description: 기준량, 무제한인경우 `무제한`으로 리턴
+                            USE:
+                                type: string
+                                description: 사용량
+                            REAMIN:
+                                type: string
+                                description: 잔여량
+                            UNIT:
+                                type: string
+                                description: 단위
+                            UNLIMIT:
+                                type: string
+                                description: 무제한여부    

@@ -1,0 +1,25 @@
+in-use:
+    get:
+        summary: 사용중인 부가서비스 조회
+        operationId: SVC-ADDITIONAL-IN-USE
+        description: |
+            회선(무선)에 대한 사용중인 전체 부가서비스(상품ID)리스트를 조회
+            > Interface: ICAS - `GetProdServFeeListSV`
+        tags: [SVC, ICAS]
+        parameters:
+          - in: path
+            name: svcManagementNumber
+            schema:
+                type: string
+            required: true
+            description: 서비스 관리번호 (10자리)
+            example: 1234567890
+        responses:
+            '200':
+                $ref: "../responses/AdditionalServiceResponse.yaml#/in-use/getSuccess"
+            '400':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_400"
+            '500':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_500"
+            '502':
+                $ref: "../../common/responses/ErrorResponse.yaml#/error_502_icas"

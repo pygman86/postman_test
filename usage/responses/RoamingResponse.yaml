@@ -1,0 +1,16 @@
+roaming-usage:
+    getSuccess:
+        description: 성공
+        content:
+            application/json:
+                schema:
+                    $ref: "../schemas/Roaming.yaml#/roaming-usage"
+                examples:
+                    비 기간형(실데이터 확인필요):
+                        $ref: "../examples/RoamingExample.yaml#/roaming-usage/notDuration"
+                    기간형 일자(실데이터 확인필요):
+                        $ref: "../examples/RoamingExample.yaml#/roaming-usage/durationDay"
+                    기간형 시간(실데이터 확인필요):
+                        $ref: "../examples/RoamingExample.yaml#/roaming-usage/durationHour"
+                    무제한(실데이터 확인필요):
+                        $ref: "../examples/RoamingExample.yaml#/roaming-usage/unlimit"

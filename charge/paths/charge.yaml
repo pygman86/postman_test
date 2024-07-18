@@ -1,0 +1,86 @@
+monthly:
+    get:
+        summary: 월별 청구요금 조회
+        operationId: CHARGE-MONTHLY
+        description: |
+            서비스관리번호 해당하는 청구계정번호의 청구요금 조회 `대표가 아닌경우 조회 불가`
+            > 청구계정번호, 고객번호, 최근청구일자, 납부방법, 청구금액, 미납금액, 할인금액
+            > Interface: APIHUB - `ISSWG00004`
+        tags: [CHARGE, APIHUB]
+        parameters:
+          - in: path
+            name: svcManagementNumber
+            schema:
+                type: string
+            required: true
+            description: 서비스 관리번호 (10자리)
+            example: 1234567890
+        responses:
+            '200':
+                $ref: "../responses/ChargeResponse.yaml#/monthly/getSuccess"
+            '400':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_400"
+            '500':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_500"
+            '502':
+                $ref: "../../common/responses/ErrorResponse.yaml#/error_502_apihub"
+
+detail:
+    get:
+        summary: 청구요금상세조회
+        operationId: CHARGE-DETAIL
+        description: |
+            > Interface: APIHUB - `ISSWG00317`
+        tags: [CHARGE, APIHUB]
+        parameters:
+          - in: path
+            name: svcManagementNumber
+            schema:
+                type: string
+            required: true
+            description: 서비스 관리번호 (10자리)
+            example: 1234567890
+          - in: query
+            name: workCode
+            schema:
+                type: string
+                default: 2
+            required: true
+            description: |
+                작업구분
+                `1`: 계정별 청구요금 상세 
+                `2`: 서비스별 청구요금 상세 (N서비스는 1개 회선 서비스 기준 조회로 2로 셋팅)
+            example: 2
+          - in: query
+            name: accountNumber
+            schema:
+                type: string
+            required: true
+            description: |
+                청구계정번호
+                > 월별청구요금조회 API 응답값 사용
+                ```GET /charge/monthly/{svcManagementNumber} 
+                response.content.MONTHLY_CHARGE_INQ_LIST[0].ACNT_NUM 사용```
+            example: 6444317743
+          - in: query
+            name: invoiceDate
+            schema:
+                type: string
+                format: yyyyMMdd
+            required: false
+            description: |
+                조회 할 청구월 `매월 마지막 날짜만 유효`
+                > 월별청구요금조회 API 응답값 사용
+                ```GET /charge/monthly/{svcManagementNumber} 
+                response.content.MONTHLY_CHARGE_INQ_LIST[0].MONTHLY_CHARGE_INQ[0].INV_DT 사용```
+            example: 20240630
+        responses:
+            '200':
+                $ref: "../responses/ChargeResponse.yaml#/detail/getSuccess"                
+            '400':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_400"
+            '500':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_500"
+            '502':
+                $ref: "../../common/responses/ErrorResponse.yaml#/error_502_apihub"            
+

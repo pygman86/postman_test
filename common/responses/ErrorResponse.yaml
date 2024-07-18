@@ -1,0 +1,32 @@
+failed_400:
+    description: Bad request
+    content:
+        application/json:
+            schema:
+                $ref: "../schemas/Error.yaml#/errors/error_400"
+            examples:
+                잘못된 요청:
+                    $ref: "../examples/Example.yaml#/bad_request"
+                유효하지 않은 파라미터:
+                    $ref: "../examples/Example.yaml#/invalid_parameter"
+                필수 파라미터 없음:
+                    $ref: "../examples/Example.yaml#/required_parameter"
+
+failed_500:
+    description: 인터페이스 서버에러
+    content:
+        application/json:
+            schema:
+                $ref: "../schemas/Error.yaml#/errors/error_500"
+            example:
+                $ref: "../examples/Example.yaml#/internal_server"
+
+failed_502_apihub:
+    description: Apihub 에러
+    content:
+        application/json:
+            schema:
+                $ref: "../schemas/Error.yaml#/errors/error_502_apihub"
+            examples:
+                데이터 없음:
+                    $ref: "../examples/Example.yaml#/apihub/noData"

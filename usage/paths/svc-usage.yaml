@@ -1,0 +1,26 @@
+svc-usage:
+    get:
+        summary: 실시간 사용량(잔여기본통화) 조회
+        operationId: SVC-USAGE
+        description: |
+            가입중인 상품의 당월 제공량/사용량/잔여량을 조회
+            가입중인 기본요금제, 부가요금제, 특수요금제 상품의 제공량/사용량/잔여량을 구분하여 제공
+            > Interface: APIHUB - `ISCDR00001`
+        tags: [APIHUB, USAGE]
+        parameters:
+          - in: path
+            name: svcManagementNumber
+            schema:
+                type: string
+            required: true
+            description: 서비스 관리번호 (10자리)
+            example: 1234567890
+        responses:
+            '200':
+                $ref: "../responses/SvcUsageResponse.yaml#/svc-usage/getSuccess"
+            '400':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_400"
+            '500':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_500"
+            '502':
+                $ref: "../../common/responses/ErrorResponse.yaml#/failed_502_apihub"

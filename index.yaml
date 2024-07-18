@@ -1,0 +1,37 @@
+openapi: '3.0.0'
+info:
+    version: '0.0.1'
+    title: '인터페이스 API'
+    description: Interface of [MCG, Apihub, ICAS, NAG] wrapping API
+
+servers:
+    - url: localhost:8080
+    - url: nlb-nn-dev-private-svc-if-b67172bd02c85c3e.elb.ap-northeast-2.amazonaws.com:8080
+    - url: https://dev.edge.numnumapi.com/nn/v1/oapi/interface
+
+tags:
+    - name: MCG
+    - name: APIHUB
+    - name: ICAS
+    - name: USAGE
+      description: 사용량
+    - name: CHARGE
+      description: 요금
+    - name: SVC
+      description: 회선
+
+paths:
+    /charge/monthly/{svcManagementNumber}:
+        $ref: "./charge/paths/charge.yaml#/monthly"
+            
+    /charge/detail/{svcManagementNumber}:
+        $ref: "./charge/paths/charge.yaml#/detail"
+
+    /svc/additional/{svcManagementNumber}:
+        $ref: "./svc/paths/additional-service.yaml#/in-use"
+
+    /usage/roaming/{svcManagementNumber}:
+        $ref: "./usage/paths/roaming.yaml#/roaming-usage"
+
+    /usage/svc/{svcManagementNumber}:
+        $ref: './usage/paths/svc-usage.yaml#/svc-usage'
